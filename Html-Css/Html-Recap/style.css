@@ -1,0 +1,10 @@
+.parone{
+    color: cadetblue;
+    border: 2px solid firebrick;
+    border-radius: 3px;
+}
+.partwo{
+    color: darkgoldenrod;
+    border: 3px solid goldenrod;
+    border-radius: 4px;
+}
