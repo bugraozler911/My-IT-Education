@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
     <h1>Forms</h1>
-    <form action="result.html"></form>
-    
+    <form action="result.html" method="get">
+    <section id="names">
+        <!-- NAME -->
+         <label for="name">Name</label><br>
+         <input 
+         type="text"
+         id="name"
+         placeholder="Enter Your  Name "
+         name="Name"
+         required
+         />
+         <input type="submit" value="Send">
+         <input type="reset" value="Delete">
+         <br><br>
+
+         <!-- E-MAIL -->
+          <label for="email">E-Mail</label><br>
+          <input type="email"
+          id="email"
+          name="E-Mail"
+          placeholder="Enter Your Email"
+          required>
+          <input type="submit" value="Send">
+         <input type="reset" value="Delete">
+         <br><br>
+        
+         <!-- PASSWORD -->
+          <label for="password">Password</label><br>
+          <input type="password"
+           id="password"
+           name="Password"
+           placeholder="Enter at least eight characters"
+           required>
+           <input type="submit" value="Send">
+         <input type="reset" value="Delete">
+         <br><br>
+
+         <!-- AGE -->
+          <label for="age">Age</label><br>
+          <input type="number"
+          id="age"
+          name="Age"
+          min="1"
+          max="50"
+          placeholder="Enter Your Age">
+          <input type="submit" value="Send">
+          <br><br><br>
+
+          <!-- GENDER (RADIO BUTTON) -->
+
+          <h3>Gender</h3>
+          <label for="man">Man</label>
+        <input type="radio" id="man" name="gender" value="Man" />
+
+        <label for="woman">Woman</label>
+        <input type="radio" id="woman" name="gender" value="Woman" />
+
+        <label for="none">None</label>
+        <input type="radio" id="none" name="gender" value="None" checked />
+        <br /><br />
+
+
+    </section>
+    </form>
 </body>
 </html>
