@@ -18,8 +18,7 @@
          name="Name"
          required
          />
-         <input type="submit" value="Send">
-         <input type="reset" value="Delete">
+         
          <br><br>
 
          <!-- E-MAIL -->
@@ -29,8 +28,7 @@
           name="E-Mail"
           placeholder="Enter Your Email"
           required>
-          <input type="submit" value="Send">
-         <input type="reset" value="Delete">
+          
          <br><br>
         
          <!-- PASSWORD -->
@@ -40,8 +38,7 @@
            name="Password"
            placeholder="Enter at least eight characters"
            required>
-           <input type="submit" value="Send">
-         <input type="reset" value="Delete">
+         
          <br><br>
 
          <!-- AGE -->
@@ -52,7 +49,7 @@
           min="1"
           max="50"
           placeholder="Enter Your Age">
-          <input type="submit" value="Send">
+          
           <br><br><br>
 
           <!-- GENDER (RADIO BUTTON) -->
@@ -68,8 +65,46 @@
         <input type="radio" id="none" name="gender" value="None" checked />
         <br /><br />
 
+        <label for="dob">Date Of Bird</label> <br />
+        <input type="date" name="Date Of Bird" id="dob" min="1990-01-01" />
+</section>
+<br><br>
 
-    </section>
+<!-- SELECT -->
+ <section>
+    <select name="Dessert" id="dessert">
+        <optgroup label="Sherbet Desserts">
+            <option value="künefe">Künefe</option>
+            <option value="Havuç Dilimi">Havuç Dilimi</option>
+            <option value="Baklava">Baklava</option>
+        </optgroup>
+        <optgroup label="Milky Desserts">
+            <option value="Sütlaç">Sütlaç</option>
+            <option value="Kazandibi">Kazandibi</option>
+            <option value="Puding">Puding</option>
+
+        </optgroup>
+    </select>
+ </section>
+ <br><br><br>
+ <section>
+    <label for="comment">Enter Your Comment:</label>
+    <br />
+    <textarea
+      name="Comment"
+      id="comment"
+      cols="40"
+      rows="10"
+      style="resize: none"
+      maxlength="100"
+      placeholder="Up to 100 characters can be entered"
+    ></textarea>
+
+  <section id="buttons">
+    <input type="submit" value="Save" />
+    <input type="reset" value="Delete" />
+  </section>
+
     </form>
 </body>
 </html>
